@@ -1,0 +1,22 @@
+{
+  "name": "online-chat",
+  "version": "1.0.0",
+  "description": "基于websocket的在线聊天室",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsail/online-chat.git"
+  },
+  "author": "sail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsail/online-chat/issues"
+  },
+  "homepage": "https://github.com/iamsail/online-chat#readme",
+  "dependencies": {
+    "ws": "^3.0.0"
+  }
+}
