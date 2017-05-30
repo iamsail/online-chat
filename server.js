@@ -11,10 +11,21 @@ var fs   = require("fs");
 
 var server = http.createServer(function(request,response){
     var pathname = url.parse(request.url).pathname;
-    if(pathname === '/index.html'){
+    if(pathname === '/index.html' || pathname === '/style.css' || pathname === '/index.js'){
         //fs.readFile('/index.html');
         //fs.readFile('index.html');
-        fs.readFile(__dirname + '/index.html');
+        fs.readFile(__dirname + pathname,'binary',function(err,file){
+            if(err){
+                response.write("404");
+                response.end();
+            }else{
+                response.writeHead(200,{
+                   'Content-Type': pathname === '/index.html' ? 'text/html' : pathname === '/style.css' ? 'text/css' :  'text/js'
+                });
+                response.write(file,"binary");
+                response.end();
+            }
+        });
     }else{
         response.write("404");
         response.end();
@@ -22,9 +33,6 @@ var server = http.createServer(function(request,response){
 });
 
 server.listen(port,'127.0.0.1');
-
-
-
 
 //**********************肖神***********************
 
