@@ -1,6 +1,36 @@
 //var WebSocketServer = require('ws').Server
 //    , wss = new WebSocketServer({port: 8080});
 
+//**********************肖神***********************
+
+
+var port = 4444;
+var http = require("http");
+var url  = require("url");
+var fs   = require("fs");
+
+var server = http.createServer(function(request,response){
+    var pathname = url.parse(request.url).pathname;
+    if(pathname === '/index.html'){
+        //fs.readFile('/index.html');
+        //fs.readFile('index.html');
+        fs.readFile(__dirname + '/index.html');
+    }else{
+        response.write("404");
+        response.end();
+    }
+});
+
+server.listen(port,'127.0.0.1');
+
+
+
+
+//**********************肖神***********************
+
+
+
+
 var WebSocket = require('ws');
 var wss = new WebSocket.Server({ port: 8080 });
 var info = { //list存放昵称,messageList存放聊天信息,msg用来实时广播当前谁进入聊天室
