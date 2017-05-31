@@ -37,5 +37,5 @@
 - 使用forever启动js文件 ```forever start xxx.js```
 - 停止js文件 ```forever stop xxx.js```
 - 启动js文件并输出日志文件 ```forever start -l forever.log -o out.log -e err.log xxx.js```
-- 重启js文件 ```forever restart app.js```
+- 重启js文件 ```forever restart xxx.js```
 - 查看正在运行的进程 ```forever list```
