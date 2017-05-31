@@ -25,4 +25,17 @@
 
 ## 其他
 
-- 在dev分支进行开发,近期发布V1.0.0
+- 本分支是v1.x系列版本
+- dev分支是项目开发分支,拥有最新的代码
+- 项目演示:[戳这儿(作者不承诺服务一直开启)](http://123.207.83.243/index.html)
+
+
+## 后台运行
+
+- 后台运行使用了forever,[参考](http://blog.csdn.net/flightsmallbird/article/details/52946817)
+- 启动服务 ```service forever start```
+- 使用forever启动js文件 ```forever start xxx.js```
+- 停止js文件 ```forever stop xxx.js```
+- 启动js文件并输出日志文件 ```forever start -l forever.log -o out.log -e err.log xxx.js```
+- 重启js文件 ```forever restart app.js```
+- 查看正在运行的进程 ```forever list```
