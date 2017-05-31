@@ -4,9 +4,15 @@
 
 已经完成大致功能
 
-## 待解决的bug
+## bugs
 
 - 用户离开时,刷新页面与关闭页面的区分
+- 发现在ipv6的网络下，不能能够成功建立websocket原因,[参考](https://stackoverflow.com/questions/31984934/calling-ipv6-ip-using-websocket-interface)
+- server.js中上线时,server.listen多写了参数,导致不能访问
+  最初的解决方案是将前台文件放在PHP，html文件夹下新建立了文件夹
+  最后删掉多出的参数就好了
+- 上线后,要注意端口冲突,是否和PHP之类的冲突
+- 关于端口的开发,在腾讯云的安全组中进行配置
 
 ## 尚未完成
 
