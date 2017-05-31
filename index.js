@@ -1,4 +1,5 @@
-var ws = new WebSocket("ws://127.0.0.1:8080/");
+//var ws = new WebSocket("ws://127.0.0.1:8080/");
+var ws = new WebSocket("ws://123.207.83.243:8080/");
 var momo = document.getElementById("momo");
 var wait = document.getElementById("wait");
 var pubMessage = document.getElementById("pubMessage");

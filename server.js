@@ -4,7 +4,7 @@
 //**********************肖神***********************
 
 
-var port = 4444;
+var port = 80;
 var http = require("http");
 var url  = require("url");
 var fs   = require("fs");
@@ -32,7 +32,8 @@ var server = http.createServer(function(request,response){
     }
 });
 
-server.listen(port,'127.0.0.1');
+//server.listen(port,'127.0.0.1');
+server.listen(port);
 
 //**********************肖神***********************
 
