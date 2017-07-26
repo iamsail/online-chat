@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/iamsail/online-chat#readme",
   "dependencies": {
+    "vue": "^2.3.4",
+    "webpack": "^2.6.1",
     "ws": "^3.0.0"
   }
 }
