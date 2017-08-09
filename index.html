@@ -1,35 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>test-online-talk</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>online-chat</title>
+  <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-<h1>聊天室</h1>
-<section id="container">
-    <input type="text" placeholder="请输入名字" id="name" >
-    <input type="submit" value="登录" id="momo">
-</section>
-
-<section id="talkArea">
-    <ul></ul>
-</section>
-
-<section id="publishTalk">
-    <h3>发布留言</h3>
-    <textarea name=""  cols="30" rows="10" placeholder="请输入留言" id="message"></textarea>
-    <input type="submit" value="留言" id="pubMessage">
-</section>
-
-<aside>
-    <h1>在线成员</h1>
-    <ul id="user">
-    </ul>
-</aside>
-
-<h1>info状态值显示</h1>
-<p id="infoId"></p>
-<script src="./index.js"></script>
+<section id="app"></section>
 </body>
 </html>
